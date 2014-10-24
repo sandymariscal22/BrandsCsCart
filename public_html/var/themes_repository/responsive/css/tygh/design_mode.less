@@ -1,0 +1,186 @@
+/* Translate
+   ========================================================================== */
+/* Translate icon (Smarty filter) */
+.translate-wrap {
+    position: relative;
+}
+.translate-wrap .ty-icon-translate {
+    opacity: 0;
+    filter:Alpha(Opacity=0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 2px 3px;
+    color: #fff !important;
+    background: #3e3e3e !important;
+    cursor: pointer;
+    z-index: 1050;
+    .border-radius(3px);
+    .transition(all .2s linear);
+}
+.translate-wrap:hover .ty-icon-translate {
+    opacity: 1;
+    filter:Alpha(Opacity=100);
+}
+
+/* Translate popup */
+.ty-translate-box__lang {
+    float: right;
+    position: relative;
+}
+.ty-translate-box__original {
+    margin: 7px 0 10px;
+    font-weight: bold;
+}
+.ty-translate-box__text {
+    min-height: 90px;
+    width: 400px;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+.ty-translate-box .ty-select-block {
+    left: auto;
+    right: 0;
+}
+
+/* Highlight original text (Smarty filter) */
+.translate-item,
+.translate-item p {
+    background: #ecffc2 !important;
+    color: #000000 !important;
+}
+.translate-item:hover,
+.translate-item p:hover {
+    background: #d3ffc0 !important;
+}
+/* /Translate box */
+
+/* Templates
+   ========================================================================== */
+/*
+ * Template: templates/common/template_editor.tpl
+ * Template: /js/tygh/design_mode.js
+ */
+.template-over {
+    display: none;
+    position: absolute;
+    display: none;
+    z-index: 1025;
+    background: #c0ff00;
+}
+/* Template icon (Smarty filter) */
+.template-box .ty-icon-edit {
+    position: absolute;
+    z-index: 99;
+    padding: 2px 3px;
+    width: 13px;
+    height: 13px;
+    background: #3e3e3e;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    .border-radius(3px);
+}
+
+.ty-template-list-menu {
+    position: absolute;
+    margin-left: -2px;
+    background: white;
+    display: none;
+    z-index: 1030;
+    border: 1px solid #3e3e3e;
+    border-radius: 4;
+    border-top-left-radius: 0;
+}
+.ty-template-list-menu li {
+    color: @links;
+    padding: 5px 8px;
+    cursor: pointer;
+}
+.ty-template-list-menu li:hover {
+    background: #f3f3f3;
+    color: #303030;
+}
+
+.ty-templates__list {
+    margin: 10px 4px;
+}
+.ty-templates__list .active {
+    color: #ff0000;
+    cursor: default;
+}
+.ty-templates__list li {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.ty-templates__tree,
+.ty-templates__content {
+    background: #f0f0f0;
+    border: 1px solid #888888;
+}
+.ty-templates__tree {
+    float: left;
+    width: 30%;
+    height: 400px;
+    padding: 22px 6px 6px 6px;
+    border-right: 0;
+    .box-sizing(border-box);
+}
+.ty-templates__tree-title {
+    margin: -22px 0 0;
+    padding: 3px 0 3px 3px;
+    font: bold 100% Arial, Helvetica, sans-serif;
+}
+.ty-templates__tree-wrapper {
+    overflow: auto;
+    height: 100%;
+    border: 1px solid #d7d7d7;
+    background: #fff;
+}
+
+.ty-templates__content {
+    position: relative;
+    float: left;
+    width: 70%;
+    height: 400px;
+    .box-sizing(border-box);
+}
+.ty-templates__text {
+    width: 100%;
+    height: 100%;
+}
+
+.ace_editor p,
+.ace_editor div,
+.ace_editor span,
+.ace_editor i {
+    font-family: 'Monaco', 'Menlo', 'Droid Sans Mono', 'Courier New', monospace !important;
+}
+
+/* Landscape phone to desktop/tablet */
+@media (max-width: 767px) {
+    .ty-templates__content,
+    .ty-templates__tree {
+        width: 100%;
+        float: none;
+    }
+    .ty-templates__tree {
+        height: 200px;
+        border-right: 1px solid #888888;
+        border-bottom: 0;
+    }
+    .ty-templates__content {
+        margin-bottom: 10px;
+    }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+    .ty-templates__buttons .ty-btn {
+        margin-bottom: 15px;
+        float: none;
+    }
+}

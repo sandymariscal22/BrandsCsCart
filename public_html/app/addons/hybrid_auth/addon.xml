@@ -1,0 +1,176 @@
+<?xml version="1.0"?>
+<addon scheme="3.0">
+    <id>hybrid_auth</id>
+    <version>1.0</version>
+    <priority>4200</priority>
+    <status>active</status>
+    <default_language>en</default_language>
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    <compatibility>
+        <conflicts>loginza,janrain</conflicts>
+    </compatibility>
+    <dependencies/>
+    <settings edition_type="ROOT,ULT:VENDOR">
+        <sections>
+            <section id="general">
+                <items>
+                    <!--OpenID-->
+                    <item id="header_openid">
+                        <type>header</type>
+                    </item>
+                    <item id="openid_status">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+
+                    <!--Yahoo-->
+                    <item id="header_yahoo">
+                        <type>header</type>
+                    </item>
+                    <item id="yahoo_status">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="yahoo_key">
+                        <type>input</type>
+                    </item>
+                    <item id="yahoo_secret">
+                        <type>input</type>
+                    </item>
+
+                    <!--AOL-->
+                    <!--<item id="header_aol">
+                        <name>AOL</name>
+                        <type>header</type>
+                    </item>
+                    <item id="aol_status">
+                        <name>Enable AOL</name>
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>-->
+
+                    <!--Google-->
+                    <item id="header_google">
+                        <type>header</type>
+                    </item>
+                    <item id="google_status">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="google_id">
+                        <type>input</type>
+                    </item>
+                    <item id="google_secret">
+                        <type>input</type>
+                    </item>
+                    <item id="google_callback_url">
+                        <type>info</type>
+                        <handler>fn_hybrid_auth_google_callback_url</handler>
+                    </item>
+
+                    <!--Facebook-->
+                    <item id="header_facebook">
+                        <type>header</type>
+                    </item>
+                    <item id="facebook_status">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="facebook_id">
+                        <type>input</type>
+                    </item>
+                    <item id="facebook_secret">
+                        <type>input</type>
+                    </item>
+
+                    <!--Twitter-->
+                    <item id="header_twitter">
+                        <type>header</type>
+                    </item>
+                    <item id="twitter_status">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="twitter_key">
+                        <type>input</type>
+                    </item>
+                    <item id="twitter_secret">
+                        <type>input</type>
+                    </item>
+
+                    <!--Windows Live-->
+                    <!--<item id="header_live">
+                        <name>Live</name>
+                        <type>header</type>
+                    </item>
+                    <item id="live_status">
+                        <name>Enable Live</name>
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="live_id">
+                        <name>Live ID</name>
+                        <type>input</type>
+                    </item>
+                    <item id="live_secret">
+                        <name>Live Secret key</name>
+                        <type>input</type>
+                    </item>-->
+
+                    <!--MySpace-->
+                    <item id="header_myspace">
+                        <type>header</type>
+                    </item>
+                    <item id="myspace_status">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="myspace_key">
+                        <type>input</type>
+                    </item>
+                    <item id="myspace_secret">
+                        <type>input</type>
+                    </item>
+
+                    <!--LinkedIn-->
+                    <item id="header_linkedin">
+                        <type>header</type>
+                    </item>
+                    <item id="linkedin_status">
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="linkedin_key">
+                        <type>input</type>
+                    </item>
+                    <item id="linkedin_secret">
+                        <type>input</type>
+                    </item>
+
+                    <!--Foursquare-->
+                    <!--<item id="header_foursquare">
+                        <name>Foursquare</name>
+                        <type>header</type>
+                    </item>
+                    <item id="foursquare_status">
+                        <name>Enable Foursquare</name>
+                        <type>checkbox</type>
+                        <default_value>N</default_value>
+                    </item>
+                    <item id="foursquare_key">
+                        <name>Foursquare API key</name>
+                        <type>input</type>
+                    </item>
+                    <item id="foursquare_secret">
+                        <name>Foursquare Secret key</name>
+                        <type>input</type>
+                    </item>-->
+                </items>
+            </section>
+        </sections>
+    </settings>
+    <queries>
+        <item>ALTER TABLE `?:users` ADD `identifier` varchar(128) NOT NULL default ''</item>
+        <item for="uninstall">ALTER TABLE  `?:users` DROP `identifier`</item>
+    </queries>
+</addon>

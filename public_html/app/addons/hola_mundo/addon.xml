@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<addon scheme='2.0'>
+	<id>hola_mundo</id>
+	<version>2.0</version>
+	<name>Hola a todos</name>
+	<description>Hola mundo como estas</description>
+	<priority>100500</priority>
+	<status>active</status>
+</addon>

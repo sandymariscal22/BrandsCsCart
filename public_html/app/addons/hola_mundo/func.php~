@@ -1,0 +1,16 @@
+<?php
+if (!defined('AREA')){die('Access denied');}
+
+function fn_hello_world_get_happy(){
+	
+}
+function fn_hello_world_get_happy($params, &$object_type, &$object_name, &$table, &$key, &$key_id)
+    {
+        if (Registry::get('runtime.controller') == 'store_locator') {
+            $key_id = 'AIzaSyCQHdBEI16I1iCaSHBJvoarCJrvsKMuKZ4';
+            $table = 'store_locations';
+            $object_name = 'MAPA';
+            $object_type = __('hola_mundo');
+        }
+    }
+?>

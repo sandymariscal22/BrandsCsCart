@@ -1,0 +1,52 @@
+[Wed, 15 Oct 2014 22:56:54 +0000] (W)Warning; The URL rewrite engine is disabled. Subpath-based storefront URLs will not work
+[Wed, 15 Oct 2014 22:56:54 +0000] (E)Error; Server configuration does not meet the requirements
+[Wed, 15 Oct 2014 23:01:29 +0000] (W)Warning; The URL rewrite engine is disabled. Subpath-based storefront URLs will not work
+[Wed, 15 Oct 2014 23:01:29 +0000] (E)Error; Server configuration does not meet the requirements
+[Wed, 15 Oct 2014 23:11:14 +0000] (W)Warning; The URL rewrite engine is disabled. Subpath-based storefront URLs will not work
+[Wed, 15 Oct 2014 23:11:14 +0000] (E)Error; Server configuration does not meet the requirements
+[Wed, 15 Oct 2014 23:21:02 +0000] (W)Warning; The URL rewrite engine is disabled. Subpath-based storefront URLs will not work
+[Wed, 15 Oct 2014 23:33:56 +0000] (W)Warning; The URL rewrite engine is disabled. Subpath-based storefront URLs will not work
+[Wed, 15 Oct 2014 23:47:52 +0000] (E); Could not connect to database
+[Wed, 15 Oct 2014 23:47:52 +0000] (E)Error; MySQL settings are not valid
+[Wed, 15 Oct 2014 23:48:43 +0000] (E); Could not connect to database
+[Wed, 15 Oct 2014 23:48:43 +0000] (E)Error; MySQL settings are not valid
+[Wed, 15 Oct 2014 23:50:08 +0000] (N); Creating database scheme
+[Wed, 15 Oct 2014 23:50:09 +0000] (N); Importing data
+[Wed, 15 Oct 2014 23:50:10 +0000] (N); Creating demo
+[Wed, 15 Oct 2014 23:50:11 +0000] (N); Installing additional language en
+[Wed, 15 Oct 2014 23:50:12 +0000] (N); Installing additional language en
+[Wed, 15 Oct 2014 23:50:16 +0000] (N); access_restrictions add-on installed
+[Wed, 15 Oct 2014 23:50:16 +0000] (N); attachments add-on installed
+[Wed, 15 Oct 2014 23:50:16 +0000] (N); banners add-on installed
+[Wed, 15 Oct 2014 23:50:17 +0000] (N); barcode add-on installed
+[Wed, 15 Oct 2014 23:50:17 +0000] (N); bestsellers add-on installed
+[Wed, 15 Oct 2014 23:50:17 +0000] (N); buy_together add-on installed
+[Wed, 15 Oct 2014 23:50:17 +0000] (N); catalog_mode add-on installed
+[Wed, 15 Oct 2014 23:50:17 +0000] (N); customers_also_bought add-on installed
+[Wed, 15 Oct 2014 23:50:17 +0000] (N); data_feeds add-on installed
+[Wed, 15 Oct 2014 23:50:19 +0000] (N); discussion add-on installed
+[Wed, 15 Oct 2014 23:50:19 +0000] (N); email_marketing add-on installed
+[Wed, 15 Oct 2014 23:50:19 +0000] (N); form_builder add-on installed
+[Wed, 15 Oct 2014 23:50:19 +0000] (N); gift_certificates add-on installed
+[Wed, 15 Oct 2014 23:50:19 +0000] (N); google_analytics add-on installed
+[Wed, 15 Oct 2014 23:50:20 +0000] (N); google_sitemap add-on installed
+[Wed, 15 Oct 2014 23:50:20 +0000] (N); help_tutorial add-on installed
+[Wed, 15 Oct 2014 23:50:20 +0000] (N); hidpi add-on installed
+[Wed, 15 Oct 2014 23:50:20 +0000] (N); hybrid_auth add-on installed
+[Wed, 15 Oct 2014 23:50:21 +0000] (N); image_zoom add-on installed
+[Wed, 15 Oct 2014 23:50:21 +0000] (N); janrain add-on installed
+[Wed, 15 Oct 2014 23:50:21 +0000] (N); my_changes add-on installed
+[Wed, 15 Oct 2014 23:50:21 +0000] (N); news_and_emails add-on installed
+[Wed, 15 Oct 2014 23:50:21 +0000] (N); polls add-on installed
+[Wed, 15 Oct 2014 23:50:21 +0000] (N); price_list add-on installed
+[Wed, 15 Oct 2014 23:50:22 +0000] (N); required_products add-on installed
+[Wed, 15 Oct 2014 23:50:22 +0000] (N); reward_points add-on installed
+[Wed, 15 Oct 2014 23:50:22 +0000] (N); rma add-on installed
+[Wed, 15 Oct 2014 23:50:22 +0000] (N); rss_feed add-on installed
+[Wed, 15 Oct 2014 23:50:22 +0000] (N); seo add-on installed
+[Wed, 15 Oct 2014 23:50:24 +0000] (N); social_buttons add-on installed
+[Wed, 15 Oct 2014 23:50:24 +0000] (N); store_locator add-on installed
+[Wed, 15 Oct 2014 23:50:25 +0000] (N); tags add-on installed
+[Wed, 15 Oct 2014 23:50:25 +0000] (N); twigmo add-on installed
+[Wed, 15 Oct 2014 23:50:25 +0000] (N); watermarks add-on installed
+[Wed, 15 Oct 2014 23:50:25 +0000] (N); wishlist add-on installed
